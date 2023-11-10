@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastyVPN & GPT-4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="chats">
+        <header
+          class="header header--center header--border heading-one regular"
+        >
+          <span class="header__text">Чаты</span>
+        </header>
+        <nav class="chat__nav">
+          <ul class="chats__list">
+            <li class="chats__link">
+              <div class="chats__typo">
+                <span class="chats__icon">
+                  <svg class="icon">
+                    <use xlink:href="sprite.svg#Text"></use>
+                  </svg>
+                </span>
+                <span class="chats__title">JS + React</span>
+              </div>
+            </li>
+            <li class="chats__link chats__link--active">
+              <div class="chats__typo">
+                <span class="chats__icon">
+                  <svg class="icon">
+                    <use xlink:href="sprite.svg#Text"></use>
+                  </svg>
+                </span>
+                <span class="chats__title">PostgreSQL + Django </span>
+              </div>
+              <button class="chats__close">
+                <svg class="icon">
+                  <use xlink:href="sprite.svg#Close"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <button class="chats__link chats__add-button">
+            <span class="chats__icon">
+              <svg class="icon">
+                <use xlink:href="sprite.svg#Add"></use>
+              </svg>
+            </span>
+            <span class="chats__title medium">Новый чат</span>
+          </button>
+        </nav>
+
+        <button class="theme">
+          <span class="theme__icon">
+            <svg class="icon icon--big">
+              <use xlink:href="sprite.svg#Theme"></use>
+            </svg>
+          </span>
+          <span class="theme__title heading-one light"> Темная тема </span>
+        </button>
+      </aside>
+      <section class="main">
+        <header class="header heading-one">
+          <span class="header__icon">
+            <span class="chats__icon">
+              <svg class="icon">
+                <use xlink:href="sprite.svg#Text"></use>
+              </svg>
+            </span>
+          </span>
+          <span class="header__actions">
+            <h1 class="header__text">PostgreSQL + Django</h1>
+            <button class="chats__icon">
+              <svg class="icon icon--small">
+                <use xlink:href="sprite.svg#Edit"></use>
+              </svg>
+            </button>
+          </span>
+          <span class="header__icon">
+            <button class="chats__icon">
+              <svg class="icon">
+                <use xlink:href="sprite.svg#Close"></use>
+              </svg>
+            </button>
+          </span>
+        </header>
+        <section class="content">
+          <main class="main__chat"></main>
+          <form class="form regular">
+            <textarea class="form__textaria" rows="3"></textarea>
+            <button class="form__button">
+              <svg class="icon icon--big">
+                <use xlink:href="sprite.svg#Send"></use>
+              </svg>
+            </button>
+          </form>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
