@@ -6,6 +6,7 @@
 }
 
 * {
+  transition: color, background 0.3s ease-out;
   scrollbar-width: thin;
   scrollbar-color: #42424b #262427;
 }
