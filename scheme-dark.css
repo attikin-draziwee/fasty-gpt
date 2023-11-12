@@ -1,0 +1,15 @@
+:root {
+  --bg__main: #262427;
+  --bg__secondary: #303037;
+  --bg__light: #42424b;
+  --bg__light-second: #42424b;
+  --bg__light-third: #5b5b69;
+  --bg__light-fourth: #868696;
+  --text: #ffffff;
+  --border: #42424b;
+  font-size: 24px;
+  fill: white;
+}
+.theme__title::after {
+  content: "Темная тема";
+}
